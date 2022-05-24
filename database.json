@@ -1,0 +1,58 @@
+{
+    "defaultEnv": {
+        "ENV": "NODE_ENV",
+        "default": "local"
+    },
+    "local": {
+        "driver": {
+            "ENV": "LOCAL_DRIVER",
+            "DEFAULT": "mysql"
+        },
+        "host": {
+            "ENV": "LOCAL_HOST",
+            "DEFAULT": "localhost"
+        },
+        "port": {
+            "ENV": "LOCAL_PORT",
+            "DEFAULT": "3306"
+        },
+        "database": {
+            "ENV": "LOCAL_DBNAME",
+            "DEFAULT": "curey"
+        },
+        "user": {
+            "ENV": "LOCAL_USERNAME",
+            "DEFAULT": "root"
+        },
+        "password": {
+            "ENV": "LOCAL_PASSWORD",
+            "DEFAULT": ""
+        }
+    },
+    "dev": {
+        "driver": {
+            "ENV": "DEV_DRIVER",
+            "DEFAULT": "mysql"
+        },
+        "host": {
+            "ENV": "DEV_HOST",
+            "DEFAULT": "localhost"
+        },
+        "port": {
+            "ENV": "DEV_PORT",
+            "DEFAULT": "3306"
+        },
+        "database": {
+            "ENV": "DEV_DBNAME",
+            "DEFAULT": "curey"
+        },
+        "user": {
+            "ENV": "DEV_USERNAME",
+            "DEFAULT": "root"
+        },
+        "password": {
+            "ENV": "DEV_PASSWORD",
+            "DEFAULT": ""
+        }
+    }
+}
