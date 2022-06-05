@@ -15,11 +15,9 @@ exports.setup = function (options, seedLink) {
 };
 
 exports.up = function (db) {
-  return db.createTable('images', {
+  return db.createTable('user_roles', {
     id: { type: 'int', primaryKey: true, autoIncrement: true },
-    path: 'string',
-    size: { type: 'float', nullable: true },
-    type: { type: 'string', nullable: true },
+    name: { type: 'string', nullable: false },
     created_at: { type: 'timestamp', nullable: true },
     updated_at: { type: 'timestamp', nullable: true },
     deleted_at: { type: 'timestamp', nullable: true },
@@ -27,7 +25,7 @@ exports.up = function (db) {
 };
 
 exports.down = function (db) {
-  return db.dropTable('images', callback);
+  return null;
 };
 
 exports._meta = {
